@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koperasi Alda Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="logo-container">
+    <div class="scrolling-background"></div> 
+    <img src="images/logo-aldamart.png" alt="Logo Koperasi Alda Mart">
+</header>
+
+<!-- Navigasi -->
+<nav>
+    <ul>
+        <li><a href="#index">Beranda</a></li>
+        <li><a href="#visi-misi">Visi & Misi</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- Konten Utama -->
+<main>
+    <section class="welcome">
+        <h1>Selamat Datang di Koperasi Alda Mart</h1>
+        <p>Koperasi sekolah yang menyediakan kebutuhan siswa, guru, dan staf dengan harga terjangkau serta berkualitas.</p>
+    </section>
+
+    <section id="visi-misi">
+        <h2>Visi, Misi, dan Tujuan</h2>
+        <h3>Visi</h3>
+        <p>"Menjadikan Koperasi Alda Mart sebagai koperasi sekolah yang modern, transparan, dan bermanfaat bagi seluruh warga MTS Al Hidayah dengan mengedepankan prinsip ekonomi Islam."</p>
+
+        <h3>Misi</h3>
+        <ul>
+            <li>Menyediakan perlengkapan sekolah, makanan sehat, dan kebutuhan siswa lainnya dengan harga terjangkau.</li>
+            <li>Memberikan keuntungan bagi anggota koperasi yang dikelola secara adil dan transparan.</li>
+            <li>Meningkatkan keterampilan siswa dalam mengelola usaha kecil melalui koperasi sekolah.</li>
+            <li>Menanamkan nilai-nilai kejujuran, tanggung jawab, dan kerja sama dalam kehidupan sehari-hari.</li>
+            <li>Menjadi koperasi yang mandiri dan berkelanjutan untuk mendukung kegiatan pendidikan di MTS Al Hidayah.</li>
+        </ul>
+    </section>
+
+    <!-- Galeri -->
+    <section id="gallery" class="gallery">
+        <h2>Galeri Koperasi</h2>
+        <div class="gallery-container">
+            <img src="images/koperasi1.jpg" alt="Toko Koperasi">
+            <img src="images/koperasi2.jpg" alt="Rak Barang Koperasi">
+            <img src="images/koperasi3.jpg" alt="Ice Cream">
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Koperasi Alda Mart | MTS Al Hidayah</p>
+    <p>“Barang siapa yang memberi kemudahan bagi orang lain, Allah akan memberi kemudahan baginya di dunia dan akhirat.” (HR. Muslim)</p>
+    <p class="footer-credit">By Getsa</p>
+</footer>
+
+<!-- JavaScript untuk Smooth Scroll -->
+<script>
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
